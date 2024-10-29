@@ -6,13 +6,23 @@ const App = ()=>{
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="../" element={<Homepage/>}/>
-          <Route path="./About" element={<About/>}/>
+          <Route path="/" element={<Homepage/>}/>
+          <Route path="/about" element={<About/>}/>
         </Routes>
       </BrowserRouter>
-
-      <Homepage/>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <About/>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      
     </div>
   )
 }

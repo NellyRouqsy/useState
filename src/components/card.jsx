@@ -16,8 +16,7 @@ const Card = ()=>{
       <CardWrap>
         <img src="./woman.jpg"/>
         <CardContent>
-            <LikeIcon onClick={updateLikes}>
-            </LikeIcon>
+            <LikeIcon className={checkClick? `LikeIcon bg-red`:`LikeIcon`} onClick={updateLikes}>Like</LikeIcon>
             <Likes>{NoOfLikes}</Likes>  
         </CardContent>
 
@@ -43,6 +42,9 @@ const Card = ()=>{
     padding: 15px 25px;
     margin: 0px auto;
     text-align: center;
+    .bg-red{
+      background: red;
+    }
   `
   const LikeIcon = styled.div`
     width: 50px;
@@ -50,6 +52,10 @@ const Card = ()=>{
     border: 1px solid pink;
     border-radius: 50%;
     margin: 0px auto;
+    cursor: pointer;
+    .bg-red{
+      background: red;
+    }
   `
   const Likes = styled.p`
     margin-top: -2px;
